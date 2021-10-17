@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="customSpinnerFont" format="reference"/>
+    <attr name="customSpinnerTextColor" format="reference"/>
+    <attr name="customSpinnerDividerColor" format="reference"/>
+</resources>

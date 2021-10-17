@@ -1,0 +1,195 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!--Theme for styling the main activity-->
+    <style name="MyTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/actionBarColor</item>
+        <item name="android:colorControlNormal">@color/controlNormalColor</item>
+        <item name="android:colorControlActivated">@color/controlActivatedColor</item>
+        <item name="colorControlHighlight">@color/controlHighlightColor</item>
+        <!-- Android Library 'Custom Add Delete Button Dialog' entries -->
+        <item name="dialogWidth">@dimen/dialog_width</item>
+        <item name="dialogBackgroundColor">@color/dialogBackgroundColor</item>
+        <item name="dialogFrameColor">@color/dialogFrameColor</item>
+        <item name="dialogTitleBackgroundColor">@color/dialogTitleBackgroundColor</item>
+        <item name="dialogTitleFont">@style/TextFontFamily</item>
+        <item name="dialogTitleTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="dialogTitleTextColor">@color/dialogTitleTextColor</item>
+        <item name="dialogActvTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="dialogActvFont">@style/TextFontFamily</item>
+        <item name="dialogActvTextColor">@color/dialogActvTextColor</item>
+        <item name="dialogActvBackgroundTint">@color/dialogActvBackgroundTintColor</item>
+        <item name="dialogActvCursorColor">@color/dialogCursorColor</item>
+        <item name="dialogButtonBackgroundStartColor">@color/dialogButtonBackgroundStartColor</item>
+        <item name="dialogButtonBackgroundCenterColor">@color/dialogButtonBackgroundCenterColor</item>
+        <item name="dialogButtonBackgroundEndColor">@color/dialogButtonBackgroundEndColor</item>
+        <item name="dialogButtonBackgroundPressedColor">@color/dialogButtonBackgroundPressed</item>
+        <item name="dialogButtonTextAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="dialogButtonFont">@style/TextFontFamily</item>
+        <item name="dialogButtonTextColor">@color/dialogButtonTextColor</item>
+        <!-- Android Library 'Custom Single Button Dialog' entries -->
+        <item name="actvFont">@style/TextFontFamily</item>
+        <item name="actvTextColor">@color/actvTextColor</item>
+        <item name="buttonState">@drawable/button_state</item>
+        <item name="buttonFont">@style/TextFontFamily</item>
+        <item name="buttonTextColor">@color/buttonTextColor</item>
+        <item name="dialogActvBackgroundTintColor">@color/dialogActvBackgroundTintColor</item>
+        <item name="dialogCursorColor">@color/dialogCursorColor</item>
+        <item name="titleFont">@style/TextFontFamily</item>
+        <!-- Android Library 'Custom Spinner Adapter' entries -->
+        <item name="customSpinnerFont">@style/TextFontFamily</item>
+        <item name="customSpinnerTextColor">@color/customSpinnerTextColor</item>
+        <item name="customSpinnerDividerColor">@color/customSpinnerDividerColor</item>
+        <!-- Android Library 'Custom Dialog Currency Picker' entries -->
+        <item name="dialogStrokeWidth">@dimen/dialog_stroke_width</item>
+        <item name="dialogIconSize">@dimen/dialog_icon_size</item>
+        <item name="dialogCurrencyIcon">@mipmap/ic_currency</item>
+        <item name="dialogFlagBorderColor">@color/dialogFlagBorderColor</item>
+        <item name="dialogPickerTextSize">@dimen/dialog_picker_text_size</item>
+        <item name="dialogPickerTextColor">@color/dialogPickerTextColor</item>
+        <item name="dialogPickerFont">@style/TextFontFamily</item>
+    </style>
+
+    <style name="TextFontFamily">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="ActionBarText" >
+        <item name="android:textAppearance">?android:attr/textAppearanceLarge</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColor">@color/actionBarTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="ActionBarAddIcon">
+        <item name="android:background">@drawable/icon_add_state</item>
+    </style>
+
+    <style name="ActionBarDeleteIcon">
+        <item name="android:background">@drawable/icon_delete_state</item>
+    </style>
+
+    <style name="ActionBarMenuIcon">
+        <item name="android:background">@drawable/icon_menu_state</item>
+    </style>
+
+    <style name="ACTVStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/actvTextColor</item>
+    </style>
+
+    <style name="ACTVUnderlineStyle">
+        <item name="android:colorControlNormal">@color/actvUnderlineColorNormal</item>
+        <item name="android:colorControlActivated">@color/actvUnderlineColorActivated</item>
+    </style>
+
+    <style name="CustomButtonStyle">
+        <item name="android:background">@drawable/button_state</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/buttonTextColor</item>
+    </style>
+
+    <style name="DialogTextStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/labelTextColor</item>
+    </style>
+
+    <style name="DialogTitleStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/titleTextColor</item>
+        <item name="android:background">@drawable/dialog_title_background</item>
+    </style>
+
+    <style name="DividerStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/listViewTextColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/listViewDividerColor</item>
+    </style>
+
+    <style name="DialogStyle2" parent="android:Theme.Dialog">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="EDTStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/edtTextColor</item>
+    </style>
+
+    <style name="IconInfoActionState">
+        <item name="android:background">@drawable/icon_info_state</item>
+    </style>
+
+    <style name="LabelText">
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/labelTextColor</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="NavigationBarStyle">
+        <item name="android:background">@color/navigationBarColor</item>
+    </style>
+
+    <style name="sectionTitle">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/sectionTextColor</item>
+    </style>
+
+    <style name="ShoppingListViewStyle">
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/listViewTextColor</item>
+    </style>
+
+    <style name="shoppingListSummaryStyle">
+        <item name="android:textSize">@dimen/table_totals_text_size</item>
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/listViewTextColor</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="SpinnerStyle">
+        <item name="android:background">@drawable/spinner_state</item>
+    </style>
+
+    <style name="TableDataTextStyle">
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/listViewTextColor</item>
+        <item name="android:textSize">@dimen/table_data_text_size</item>
+    </style>
+
+    <style name="TableCompareHeaderTextStyle">
+        <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="android:textColor">@color/listViewTextColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/table_compare_heading_text_size</item>
+    </style>
+
+    <style name="TableCompareTotalsTextStyle">
+        <item name="android:fontFamily">@style/TextFontFamily</item>
+        <item name="android:textColor">@color/listViewTextColor</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textSize">@dimen/table_totals_text_size</item>
+    </style>
+
+</resources>

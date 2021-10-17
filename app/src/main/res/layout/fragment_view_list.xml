@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ListView
+        android:id="@+id/itemListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/listView_margin"
+        android:background="@drawable/widget_background"
+        android:divider="@color/listViewDividerColor"
+        android:dividerHeight="1dp"
+        android:padding="8dp">
+    </ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        android:background="@drawable/table_totals_background">
+
+        <TextView
+            android:id="@+id/txtShop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            style="@style/shoppingListSummaryStyle" />
+
+        <TextView
+            android:id="@+id/txtItemQty"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".25"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="center"
+            style="@style/shoppingListSummaryStyle" />
+
+        <TextView
+            android:id="@+id/txtCost"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".35"
+            android:layout_gravity="end|center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textAlignment="textEnd"
+            style="@style/shoppingListSummaryStyle" />
+
+    </LinearLayout>
+</LinearLayout>

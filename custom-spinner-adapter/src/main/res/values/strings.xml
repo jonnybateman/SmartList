@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Custom-Spinner-Adapter</string>
+    <string name="descriptor_spinner_divider">Spinner item divider</string>
+</resources>

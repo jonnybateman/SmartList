@@ -1,0 +1,77 @@
+<resources>
+    <string name="app_name">SmartList</string>
+    <string name="action_bar_title">SmartList</string>
+    <string name="button_clear">Clear List</string>
+    <string name="button_save">Save</string>
+    <string name="button_delete">Delete</string>
+    <string name="button_load">Load</string>
+    <string name="button_yes">Yes</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="descriptor_menu_icon">menu icon</string>
+    <string name="descriptor_delete_icon">delete icon</string>
+    <string name="descriptor_add_icon">add icon</string>
+    <string name="descriptor_logo_icon">logo</string>
+    <string name="descriptor_drawer_header_icon">logo</string>
+    <string name="descriptor_barcode_icon">scan barcode</string>
+    <string name="dialog_title_add_delete_category">Add/Delete Category</string>
+    <string name="dialog_title_add_delete_shop">Add/Delete Shop</string>
+    <string name="dialog_title_add_delete_brand">Add/Delete Brand</string>
+    <string name="dialog_title_delete_item">Delete Item</string>
+    <string name="dialog_title_list_save">Save List</string>
+    <string name="dialog_title_list_load">Load List</string>
+    <string name="dialog_title_list_delete">Delete List</string>
+    <string name="dialog_title_currency_confirm">Change currency?</string>
+    <string name="dialog_title_create_edit_user">Create/Edit User</string>
+    <string name="dialog_msg_currency_confirm">Item Info will not be available for old currency!</string>
+    <string name="hint_qty_edt">Enter Qty/Unit</string>
+    <string name="label_category">Select Category</string>
+    <string name="label_item">Enter/Choose Item</string>
+    <string name="label_quantity">Quantity/Units</string>
+    <string name="label_shop">Select Shop</string>
+    <string name="label_brand">Select Brand</string>
+    <string name="label_price">Enter Price</string>
+    <string name="label_barcode">Barcode</string>
+    <string name="label_qty">Qty</string>
+    <string name="label_unit">Unit</string>
+    <string name="menu_create_edit_user">Create/Edit User</string>
+    <string name="menu_add_delete_category">Categories</string>
+    <string name="menu_add_delete_shop">Shops</string>
+    <string name="menu_add_delete_brand">Brands</string>
+    <string name="menu_delete_item">Delete Item</string>
+    <string name="menu_change_currency">Currency</string>
+    <string name="menu_add_items_barcode">Add items scan barcode</string>
+    <string name="menu_save_list">Save List</string>
+    <string name="menu_load_list">Load List</string>
+    <string name="menu_delete_list">Delete List</string>
+    <string name="menu_backup_data">Backup Data</string>
+    <string name="menu_restore_data">Restore Data</string>
+    <string name="navigation_create_edit">Create/Edit</string>
+    <string name="navigation_view_list">View List</string>
+    <string name="navigation_compare">Compare</string>
+    <string name="section_title_item">Item</string>
+    <string name="section_title_item_info">Item Info</string>
+    <string name="table_compare_header_no_item_info">No Item Info</string>
+    <string name="table_compare_shop_totals">Totals</string>
+
+    <string name="permission_description_sqlitedevstudio_allow_access">Permission allows SQLiteDevStudio to access content provider. App databases can be modified.</string>
+
+    <string-array name="array_tables">
+        <item>categories</item>
+        <item>items</item>
+        <item>shops</item>
+        <item>brands</item>
+        <item>item_info</item>
+        <item>lists</item>
+        <item>list_items</item>
+    </string-array>
+
+    <string-array name="array_record_tag">
+        <item>category</item>
+        <item>item</item>
+        <item>shop</item>
+        <item>brand</item>
+        <item>info</item>
+        <item>list</item>
+        <item>list_item</item>
+    </string-array>
+</resources>

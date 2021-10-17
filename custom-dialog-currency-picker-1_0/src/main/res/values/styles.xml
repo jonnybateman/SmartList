@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DialogStyle" parent="android:Theme.Dialog">
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background">@drawable/dialog_background</item>
+        <item name="android:layout_width">?attr/dialogWidth</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="DialogHeaderStyle">
+        <item name="android:background">@drawable/dialog_title_background</item>
+    </style>
+
+    <style name="DialogTitleTextStyle">
+        <item name="android:textAppearance">?attr/dialogTitleTextAppearance</item>
+        <item name="android:fontFamily">?attr/dialogTitleFont</item>
+        <item name="android:textColor">?attr/dialogTitleTextColor</item>
+    </style>
+
+    <style name="DialogPickerStyle" >
+        <item name="android:textSize">?attr/dialogPickerTextSize</item>
+        <item name="android:fontFamily">?attr/dialogPickerFont</item>
+        <item name="android:textColorPrimary">?attr/dialogPickerTextColor</item>
+    </style>
+
+    <style name="CustomButtonStyle">
+        <item name="android:background">@drawable/button_state</item>
+        <item name="android:textAppearance">?attr/dialogButtonTextAppearance</item>
+        <item name="android:fontFamily">?attr/dialogButtonFont</item>
+        <item name="android:textColor">?attr/dialogButtonTextColor</item>
+    </style>
+</resources>

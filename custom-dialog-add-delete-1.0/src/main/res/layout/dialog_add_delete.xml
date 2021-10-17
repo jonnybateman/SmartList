@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/deleteCategoryItemLayout"
+    style="@style/DialogStyle">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        style="@style/DialogHeaderStyle">
+
+        <ImageView
+            android:id="@+id/icon_dialog_add_delete"
+            android:contentDescription="@string/descriptor_add_delete_icon"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dialog_icon_size"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:layout_marginStart="1dp"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/dialogAddDeleteTitle"
+            android:labelFor="@+id/dialogAddDeleteACTV"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:paddingTop="@dimen/dialog_header_padding"
+            android:paddingBottom="@dimen/dialog_header_padding"
+            android:paddingLeft="@dimen/dialog_text_padding"
+            android:paddingRight="@dimen/dialog_text_padding"
+            android:gravity="center"
+            android:lines="2"
+            style="@style/DialogTitleTextStyle"/>
+
+    </LinearLayout>
+
+    <AutoCompleteTextView
+        android:id="@+id/dialogAddDeleteACTV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dialog_actv_margin"
+        android:paddingTop="@dimen/dialog_actv_padding"
+        android:paddingBottom="@dimen/dialog_actv_padding"
+        android:inputType="textCapWords"
+        android:text=""
+        style="@style/ACTVStyle"
+        android:backgroundTint="?attr/dialogActvBackgroundTint"
+        android:textCursorDrawable="@drawable/cursor_white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/dialogAddBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="@dimen/dialog_button_margin"
+            style="@style/CustomButtonStyle" />
+
+        <Button
+            android:id="@+id/dialogDeleteBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            style="@style/CustomButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

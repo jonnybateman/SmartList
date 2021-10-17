@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/SmartList.iml" filepath="$PROJECT_DIR$/SmartList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/SmartList.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/SmartList.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-dialog-add-delete-1.0/SmartList.custom-dialog-add-delete-1.0.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-dialog-add-delete-1.0/SmartList.custom-dialog-add-delete-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-dialog-currency-picker-1_0/SmartList.custom-dialog-currency-picker-1_0.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-dialog-currency-picker-1_0/SmartList.custom-dialog-currency-picker-1_0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-dialog-single-button-1.0/SmartList.custom-dialog-single-button-1.0.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-dialog-single-button-1.0/SmartList.custom-dialog-single-button-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-input-filter-1.0/SmartList.custom-input-filter-1.0.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-input-filter-1.0/SmartList.custom-input-filter-1.0.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/custom-spinner-adapter/SmartList.custom-spinner-adapter.iml" filepath="$PROJECT_DIR$/.idea/modules/custom-spinner-adapter/SmartList.custom-spinner-adapter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/icon-color-gradient/SmartList.icon-color-gradient.iml" filepath="$PROJECT_DIR$/.idea/modules/icon-color-gradient/SmartList.icon-color-gradient.iml" />
+    </modules>
+  </component>
+</project>

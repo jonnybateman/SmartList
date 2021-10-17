@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+<item>
+    <shape>
+        <solid
+            android:color="?attr/dialogTitleBackgroundColor">
+        </solid>
+        <corners android:topLeftRadius="@dimen/dialog_corners_radius"
+            android:topRightRadius="@dimen/dialog_corners_radius" />
+        <padding
+            android:bottom="@dimen/dialog_header_padding"
+            android:top="@dimen/dialog_header_padding"
+            android:right="@dimen/dialog_header_padding"
+            android:left="@dimen/dialog_header_padding" />
+
+    </shape>
+</item>
+</selector>

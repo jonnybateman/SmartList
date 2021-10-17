@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid
+                android:color="?attr/dialogBackgroundColor">
+            </solid>
+            <corners android:radius="@dimen/dialog_corner_radius" />
+            <padding
+                android:bottom="@dimen/dialog_background_padding" />
+            <stroke
+                android:width="?attr/dialogStrokeWidth"
+                android:color="?attr/dialogFrameColor" />
+        </shape>
+    </item>
+
+</selector>

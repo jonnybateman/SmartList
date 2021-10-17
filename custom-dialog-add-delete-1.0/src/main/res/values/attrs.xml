@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="dialogWidth" format="reference"/>
+    <attr name="dialogBackgroundColor" format="reference"/>
+    <attr name="dialogFrameColor" format="reference"/>
+    <attr name="dialogTitleBackgroundColor" format="reference"/>
+    <attr name="dialogTitleFont" format="reference"/>
+    <attr name="dialogTitleTextAppearance" format="reference"/>
+    <attr name="dialogTitleTextColor" format="reference"/>
+    <attr name="dialogActvTextAppearance" format="reference"/>
+    <attr name="dialogActvFont" format="reference"/>
+    <attr name="dialogActvTextColor" format="reference"/>
+    <attr name="dialogActvBackgroundTint" format="reference"/>
+    <attr name="dialogActvCursorColor" format="reference"/>
+    <attr name="dialogButtonBackgroundStartColor" format="reference"/>
+    <attr name="dialogButtonBackgroundCenterColor" format="reference"/>
+    <attr name="dialogButtonBackgroundEndColor" format="reference"/>
+    <attr name="dialogButtonBackgroundPressedColor" format="reference"/>
+    <attr name="dialogButtonTextAppearance" format="reference"/>
+    <attr name="dialogButtonFont" format="reference"/>
+    <attr name="dialogButtonTextColor" format="reference"/>
+</resources>

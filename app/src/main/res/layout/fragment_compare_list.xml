@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:id="@+id/fillable_area"
+    android:layout_margin="@dimen/table_padding">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TableLayout
+            android:id="@+id/table_fixed_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <HorizontalScrollView
+            android:id="@+id/header_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/table_header"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="1dp"
+                android:layout_marginBottom="1dp"/>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <!-- This layout breaks the table from the shop totals layout, puts the shop totals layout at
+        the bottom -->
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+    </LinearLayout>
+-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@id/fillable_area"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:id="@+id/item_fixed_column"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/table_compare_fixed_column_background"
+                android:divider="@drawable/table_compare_divider"
+                android:showDividers="middle" />
+
+            <HorizontalScrollView
+                android:id="@+id/data_scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableLayout
+                    android:id="@+id/shops_scrollable_columns"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:divider="@drawable/table_compare_divider"
+                    android:showDividers="middle" />
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/shop_totals_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/table_totals_background"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/table_compare_totals_margin_top">
+
+        <TableLayout
+            android:id="@+id/shop_total_fixed_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TableLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/shop_totals_scroll_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableLayout
+                android:id="@+id/shop_total_scrollable_views"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent" />
+
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>

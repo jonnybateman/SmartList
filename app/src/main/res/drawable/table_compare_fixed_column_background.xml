@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+        <shape>
+            <solid
+                android:color="@color/tableCompareHeaderBackgroundColor">
+            </solid>
+            <corners android:topLeftRadius="@dimen/table_corners_radius"
+                android:topRightRadius="@dimen/table_corners_radius"
+                android:bottomLeftRadius="@dimen/table_corners_radius"
+                android:bottomRightRadius="@dimen/table_corners_radius"/>
+        </shape>
+    </item>
+
+</selector>

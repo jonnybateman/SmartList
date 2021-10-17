@@ -1,0 +1,1 @@
+include ':app', ':icon-color-gradient', ':custom-spinner-adapter', ':custom-dialog-add-delete-1.0', ':custom-input-filter-1.0', ':custom-dialog-single-button-1.0', ':custom-dialog-currency-picker-1_0'

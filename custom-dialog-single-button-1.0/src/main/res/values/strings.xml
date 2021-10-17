@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Dialog Single Button</string>
+    <string name="descriptor_single_button_icon">dialog icon</string>
+</resources>

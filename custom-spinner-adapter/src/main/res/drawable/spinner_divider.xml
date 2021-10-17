@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <size android:height="@dimen/spinner_divider_height"/>
+    <!-- Divider color hard coded to library as unable to use attr reference to Activity's theme -->
+    <solid android:color="@color/customSpinnerDividerColor"/>
+</shape>

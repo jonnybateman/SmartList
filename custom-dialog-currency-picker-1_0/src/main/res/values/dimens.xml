@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dialog_flag_padding">2dp</dimen>
+    <dimen name="dialog_flag_margin_start">10dp</dimen>
+    <dimen name="dialog_flag_margin_end">10dp</dimen>
+    <dimen name="dialog_picker_margin_end">10dp</dimen>
+    <dimen name="dialog_button_margin">5dp</dimen>
+    <dimen name="dialog_title_padding1">2dp</dimen>
+    <dimen name="dialog_title_padding2">10dp</dimen>
+    <dimen name="dialog_corner_radius">10dp</dimen>
+    <dimen name="dialog_background_padding">10dp</dimen>
+    <dimen name="dialog_header_padding">2dp</dimen>
+</resources>

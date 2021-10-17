@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/frame_layout_padding_top"
+        android:paddingStart="@dimen/frame_layout_padding_left"
+        android:paddingEnd="@dimen/frame_layout_padding_right">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow
+                android:layout_weight="1"
+                android:layout_marginTop="@dimen/table_padding_top"
+                android:background="@drawable/section_background">
+                <TextView
+                    android:id="@+id/sectionTitleItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/title_padding_top"
+                    android:paddingBottom="@dimen/title_padding_bottom"
+                    android:paddingStart="@dimen/title_padding_start"
+                    android:paddingEnd="0dp"
+                    android:gravity="start"
+                    style="@style/sectionTitle"
+                    android:layout_weight="1"
+                    android:text="@string/section_title_item" />
+            </TableRow>
+
+            <TableRow
+                android:weightSum="1"
+                android:layout_marginTop="@dimen/section_margin">
+                <TextView
+                    android:id="@+id/labelCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_category"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    style="@style/LabelText"/>
+            </TableRow>
+            <TableRow
+                android:weightSum="1"
+                android:layout_marginBottom="@dimen/table_margin">
+                <androidx.appcompat.widget.AppCompatSpinner
+                    android:id="@+id/spnCategory"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:overlapAnchor="false"
+                    android:popupBackground="@color/actionBarColor"
+                    style="@style/SpinnerStyle">
+                </androidx.appcompat.widget.AppCompatSpinner>
+            </TableRow>
+
+            <TableRow
+                android:weightSum="1">
+                <TextView
+                    android:id="@+id/labelItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_item"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    style="@style/LabelText"/>
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/table_margin">
+                <AutoCompleteTextView
+                    android:id="@+id/actvItem"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:inputType="textCapWords"
+                    android:background="@drawable/text_input_state"
+                    android:theme="@style/ACTVUnderlineStyle"
+                    style="@style/ACTVStyle"/>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/labelQuantity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_quantity"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    style="@style/LabelText"/>
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/table_margin">
+                <TextView
+                    android:id="@+id/labelSwitchQty"
+                    android:labelFor="@+id/edtQuantityUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/EDTStyle"
+                    android:layout_weight="0.09"
+                    android:text="@string/label_qty" />
+                <Switch
+                    android:id="@+id/switchQtyUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.14"
+                    android:thumb="@drawable/switch_thumb_normal"
+                    android:track="@drawable/switch_track_normal"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="@dimen/switch_padding"
+                    android:layout_marginStart="@dimen/switch_margin_start"
+                    android:layout_marginEnd="@dimen/switch_margin_end" />
+                <TextView
+                    android:id="@+id/labelSwitchUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/table_margin_end"
+                    style="@style/EDTStyle"
+                    android:layout_weight="0.10"
+                    android:text="@string/label_unit" />
+
+                <EditText
+                    android:id="@+id/edtQuantityUnit"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/text_input_state"
+                    style="@style/EDTStyle"
+                    android:layout_weight="0.67" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/labelBarcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_barcode"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    style="@style/LabelText"/>
+            </TableRow>
+            <TableRow
+                android:layout_weight="1"
+                android:layout_marginBottom="@dimen/table_margin">
+                <EditText
+                    android:id="@+id/edtBarcode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/EDTStyle"
+                    android:layout_weight="0.9"
+                    android:inputType="text"
+                    android:background="@drawable/text_input_state" />
+                <ImageView
+                    android:id="@+id/imgBarCode"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.10"
+                    android:contentDescription="@string/descriptor_barcode_icon"
+                    android:src="@mipmap/ic_item" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="10"
+                android:layout_marginBottom="@dimen/section_margin"
+                android:background="@drawable/section_background">
+                <TextView
+                    android:id="@+id/labelItemInfoTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="start"
+                    android:paddingTop="@dimen/title_padding_top"
+                    android:paddingBottom="@dimen/title_padding_bottom"
+                    android:paddingStart="@dimen/title_padding_start"
+                    android:paddingEnd="0dp"
+                    android:layout_weight="8"
+                    android:text="@string/section_title_item_info"
+                    style="@style/sectionTitle" />
+                <ImageView
+                    android:id="@+id/iconAddInfo"
+                    android:contentDescription="@string/descriptor_add_icon"
+                    android:layout_width="@dimen/actionbar_icon_size"
+                    android:layout_height="@dimen/actionbar_icon_size"
+                    android:layout_weight="1"
+                    style="@style/ActionBarAddIcon" />
+                <ImageView
+                    android:id="@+id/iconDeleteInfo"
+                    android:contentDescription="@string/descriptor_delete_icon"
+                    android:layout_width="@dimen/actionbar_icon_size"
+                    android:layout_height="@dimen/actionbar_icon_size"
+                    android:layout_weight="1"
+                    style="@style/ActionBarDeleteIcon" />
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/labelShop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_shop"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    style="@style/LabelText"/>
+            </TableRow>
+            <TableRow
+                android:weightSum="1"
+                android:layout_marginBottom="@dimen/table_margin">
+                <Spinner
+                    android:id="@+id/spnShop"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/SpinnerStyle"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:overlapAnchor="false"
+                    android:popupBackground="@color/actionBarColor">
+                </Spinner>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/labelBrand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_brand"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    style="@style/LabelText"/>
+            </TableRow>
+            <TableRow
+                android:weightSum="1"
+                android:layout_marginBottom="@dimen/table_margin">
+                <Spinner
+                    android:id="@+id/spnBrand"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/SpinnerStyle"
+                    android:spinnerMode="dropdown"
+                    android:layout_weight="1"
+                    android:overlapAnchor="false"
+                    android:popupBackground="@color/actionBarColor">
+                </Spinner>
+            </TableRow>
+
+            <TableRow
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/labelPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_price"
+                    android:layout_weight="1"
+                    android:layout_gravity="center_vertical"
+                    style="@style/LabelText"/>
+            </TableRow>
+            <TableRow
+                android:weightSum="1">
+                <EditText
+                    android:id="@+id/edtPrice"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    style="@style/EDTStyle"
+                    android:inputType="numberDecimal"
+                    android:layout_weight="1"
+                    android:textAlignment="viewEnd"
+                    android:background="@drawable/text_input_state"/>
+            </TableRow>
+
+        </TableLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center|bottom"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/button_clear"
+                android:layout_marginTop="@dimen/button_margin"
+                android:layout_marginBottom="@dimen/button_margin"
+                style="@style/CustomButtonStyle" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

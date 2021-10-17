@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="SpinnerText">
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:fontFamily">?attr/customSpinnerFont</item>
+        <!-- Text color hard coded to library as unable to use attr reference to Activity's theme -->
+        <item name="android:textColor">@color/customSpinnerTextColor</item>
+    </style>
+</resources>

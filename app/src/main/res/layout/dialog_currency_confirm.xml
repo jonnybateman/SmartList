@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/dialogCurrencyChangeLayout"
+    style="@style/DialogStyle2">
+
+    <TextView
+        android:id="@+id/txtCurrencyChangeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dialog_text_padding"
+        android:paddingBottom="@dimen/dialog_text_padding"
+        android:paddingLeft="@dimen/dialog_text_padding"
+        android:paddingRight="@dimen/dialog_text_padding"
+        android:gravity="center_horizontal"
+        android:lines="1"
+        android:text="@string/dialog_title_currency_confirm"
+        style="@style/DialogTitleStyle"/>
+
+    <TextView
+        android:id="@+id/txtCurrencyChangeMsg"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/dialog_text_padding"
+        android:text="@string/dialog_msg_currency_confirm"
+        style="@style/DialogTextStyle"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/btnCurrencyChangeYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="@dimen/dialog_button_margin"
+            style="@style/CustomButtonStyle" />
+
+        <Button
+            android:id="@+id/btnCurrencyChangeNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="5dp"
+            style="@style/CustomButtonStyle" />
+    </LinearLayout>
+
+</LinearLayout>

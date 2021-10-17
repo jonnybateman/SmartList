@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="none"
+        android:id="@+id/menu_grp1">
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@mipmap/ic_user"
+            android:title="@string/menu_create_edit_user" />
+    </group>
+    <group android:checkableBehavior="none"
+        android:id="@+id/menu_grp2">
+        <item
+            android:id="@+id/nav_category"
+            android:icon="@mipmap/ic_category"
+            android:title="@string/menu_add_delete_category" />
+        <item
+            android:id="@+id/nav_shop"
+            android:icon="@mipmap/ic_shopping_cart"
+            android:title="@string/menu_add_delete_shop" />
+        <item
+            android:id="@+id/nav_brand"
+            android:icon="@mipmap/ic_brand"
+            android:title="@string/menu_add_delete_brand" />
+        <item
+            android:id="@+id/nav_item"
+            android:icon="@mipmap/ic_item"
+            android:title="@string/menu_delete_item" />
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/menu_grp3">
+        <item
+            android:id="@+id/nav_currency"
+            android:icon="@mipmap/ic_currency"
+            android:title="@string/menu_change_currency" />
+    </group>
+
+    <group android:checkableBehavior="none"
+        android:id="@+id/menu_grp4">
+        <item
+            android:id="@+id/nav_barcode"
+            android:icon="@mipmap/ic_item"
+            android:title="@string/menu_add_items_barcode"/>
+    </group>
+    <group android:checkableBehavior="none"
+        android:id="@+id/menu_grp5">
+        <item
+            android:id="@+id/nav_load_list"
+            android:icon="@mipmap/ic_load"
+            android:title="@string/menu_load_list" />
+        <item
+            android:id="@+id/nav_save_list"
+            android:icon="@mipmap/ic_save"
+            android:title="@string/menu_save_list" />
+        <item
+            android:id="@+id/nav_delete_list"
+            android:icon="@mipmap/ic_delete"
+            android:title="@string/menu_delete_list" />
+    </group>
+    <group android:checkableBehavior="none"
+        android:id="@+id/menu_grp6">
+        <item
+            android:id="@+id/nav_backup"
+            android:icon="@mipmap/ic_cloud_upload"
+            android:title="@string/menu_backup_data" />
+        <item
+            android:id="@+id/nav_restore"
+            android:icon="@mipmap/ic_cloud_download"
+            android:title="@string/menu_restore_data" />
+    </group>
+</menu>

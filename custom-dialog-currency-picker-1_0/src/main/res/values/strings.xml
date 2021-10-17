@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">custom-dialog-currency-picker-1.0</string>
+    <string name="flag_image_descriptor">flag_image</string>
+    <string name="dialog_icon">dialog_icon</string>
+    <string name="dialog_title_currency">Select Currency</string>
+    <string name="button_ok">OK</string>
+
+    <string-array name="array_currency">
+        <item>GBP</item>
+        <item>EURO</item>
+        <item>CHF</item>
+        <item>USD</item>
+    </string-array>
+</resources>
